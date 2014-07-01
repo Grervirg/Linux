@@ -1,5 +1,5 @@
 #!/bin/bash
-Inputpath=/media/Downloads/"Process Movies"/
+Inputpath=/media/Downloads/Process/Movies
 Outputpath=/media/MyMedia/Movies/
 Format="{n} ({y})[{sdhd}]/{n} ({y})"
-Filebot -rename $Inputpath --db thetvdb --format $Format --output $Outputpath 
+filebot -rename /media/Downloads/Process/Movies --db IMDB --format "{n} ({y})[{sdhd}]/{n} ({y})" --output /media/MyMedia/Movies/ 
