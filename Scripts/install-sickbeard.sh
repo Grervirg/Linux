@@ -1,9 +1,11 @@
 #!/bin/bash
-git clone git://github.com/midgetspy/Sick-Beard.git /opt/sickbeard
-useradd sickbeard
-cp sickbeard.conf /etc/default/sickbeard
-cd /opt/sickbeard
-cp init.ubuntu /etc/init.d/sickbeard
-chmod +x /etc/init.d/sickbeard
-update-rc.d sickbeard defaults
-service sickbeard start
+echo "enter sudo password"
+sudo -v
+sudo git clone git://github.com/midgetspy/Sick-Beard.git /opt/sickbeard
+sudo useradd sickbeard
+sudo cp sickbeard.conf /etc/default/sickbeard
+sudo cd /opt/sickbeard
+sudo cp init.ubuntu /etc/init.d/sickbeard
+sudo chmod +x /etc/init.d/sickbeard
+sudo update-rc.d sickbeard defaults
+sudo service sickbeard start
